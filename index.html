@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaunchPad Academy</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="sticky-top bg-white border-bottom shadow-sm">
+        <nav class="navbar navbar-expand-md py-3">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a href="#" class="navbar-brand d-flex align-items-center gap-2 text-dark">
+                    <i class="bi bi-rocket-takeoff-fill fs-3 text-primary"></i>
+                    <span class="fs-4 fw-bold">LaunchPad</span>
+                </a>
+
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <i class="bi bi-list fs-1 text-dark"></i>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+                    <ul class="navbar-nav align-items-center gap-md-4 mt-3 mt-md-0 text-center text-md-start">
+                        <li class="nav-item"><a href="#about" class="nav-link fw-medium">About</a></li>
+                        <li class="nav-item"><a href="#roadmap" class="nav-link fw-medium">Roadmap</a></li>
+                        <li class="nav-item"><a href="#courses" class="nav-link fw-medium">Courses</a></li>
+                        <li class="nav-item"><a href="#faq" class="nav-link fw-medium">FAQ</a></li>
+                        <li class="nav-item mt-2 mt-md-0 w-100">
+                            <a href="#signup" class="btn btn-primary px-4 shadow-sm w-100">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="py-5 d-flex align-items-center text-white animate-fade-in">
+            <div class="container py-4">
+                <div class="row align-items-center g-5">
+                    <div class="col-12 col-md-6">
+                        <div class="frosted-glass">
+                            <span class="badge bg-white text-primary fw-bold px-3 py-2 mb-3">Empower Your Future</span>
+                            <h1 class="display-5 fw-black mb-3">Master the Tech Skills That Matter</h1>
+                            <p class="lead mb-4">Accelerate your career with guided learning paths, hands-on projects, and experienced mentors.</p>
+                            <div class="d-flex flex-column flex-sm-row gap-3">
+                                <a href="#courses" class="btn btn-light btn-lg fw-bold">Explore Courses</a>
+                                <a href="#about" class="btn btn-outline-light btn-lg">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-lg">
+                            <img src="Img/photo-1587620962725-abab7fe55159.avif" alt="Student learning programming" class="w-100 h-100 object-fit-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-5 my-lg-5">
+            <div class="container py-4">
+                <div class="row g-4 align-items-center mb-5">
+                    <div class="col-12 col-md-5">
+                        <span class="text-primary fw-bold text-sm d-block mb-2">Who We Are</span>
+                        <h2 class="fw-bold display-6 mb-4">A Next-Generation Learning Platform</h2>
+                        <p class="text-secondary mb-0">LaunchPad Academy helps students build real programming skills through structured learning paths, practical projects, and mentorship from experienced instructors.</p>
+                    </div>
+                    <div class="col-12 col-md-6 offset-md-1">
+                        <div class="p-4 bg-light rounded-4 border">
+                            <h3 class="fw-bold h4 mb-3 d-flex align-items-center gap-2">
+                                <i class="bi bi-bullseye text-primary"></i> Our Mission
+                            </h3>
+                            <p class="text-secondary mb-0">Our mission is to prepare students with practical coding skills, industry best practices, and project-based learning that helps them succeed in modern software development.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4 text-center">
+                    <div class="col-12 col-md-4">
+                        <div class="p-4 border rounded-4 bg-white shadow-sm">
+                            <i class="bi bi-people-fill text-primary display-5 mb-2"></i>
+                            <h3 class="fw-bold display-5 mb-1">15,000+</h3>
+                            <p class="text-secondary mb-0">Active Students</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="p-4 border rounded-4 bg-white shadow-sm">
+                            <i class="bi bi-journal-code text-primary display-5 mb-2"></i>
+                            <h3 class="fw-bold display-5 mb-1">45+</h3>
+                            <p class="text-secondary mb-0">Coding Courses</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="p-4 border rounded-4 bg-white shadow-sm">
+                            <i class="bi bi-award-fill text-primary display-5 mb-2"></i>
+                            <h3 class="fw-bold display-5 mb-1">94%</h3>
+                            <p class="text-secondary mb-0">Student Success Rate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="roadmap" class="py-5 bg-light border-top border-bottom">
+            <div class="container py-4">
+                <header class="text-center mb-5">
+                    <span class="text-primary fw-bold text-sm">Your Journey</span>
+                    <h2 class="fw-bold display-6 mt-2">Learning Roadmap</h2>
+                </header>
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 p-4 text-center">
+                            <i class="bi bi-1-circle-fill fs-1 text-primary mb-3"></i>
+                            <h4 class="fw-bold h5">HTML</h4>
+                            <p class="text-secondary text-sm mb-0">Learn semantic HTML, forms, tables, accessibility, and modern webpage structure.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 p-4 text-center">
+                            <i class="bi bi-2-circle-fill fs-1 text-primary mb-3"></i>
+                            <h4 class="fw-bold h5">CSS</h4>
+                            <p class="text-secondary text-sm mb-0">Master Flexbox, Grid, responsive layouts, animations, and transitions.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 p-4 text-center">
+                            <i class="bi bi-3-circle-fill fs-1 text-primary mb-3"></i>
+                            <h4 class="fw-bold h5">JavaScript</h4>
+                            <p class="text-secondary text-sm mb-0">Build interactive websites using functions, arrays, loops, objects, and events.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 p-4 text-center">
+                            <i class="bi bi-4-circle-fill fs-1 text-primary mb-3"></i>
+                            <h4 class="fw-bold h5">Final Project</h4>
+                            <p class="text-secondary text-sm mb-0">Combine everything into a complete responsive portfolio project.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="courses" class="py-5 my-lg-5">
+            <div class="container py-4">
+                <header class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5 gap-3">
+                    <div>
+                        <span class="text-primary fw-bold text-sm">Active Cohorts</span>
+                        <h2 class="fw-bold display-6 mt-2">Explore Available Courses</h2>
+                    </div>
+                </header>
+
+                <div class="courses-horizontal-scroll">
+                    <div class="course-card-item">
+                        <div class="card h-100 rounded-4 shadow-sm border overflow-hidden">
+                            <div class="text-center py-4" style="background:#fff4ed;">
+                                <img src="Img/HTML5_logo_and_wordmark.svg-removebg-preview.png" alt="HTML Logo" style="height:60px;object-fit:contain;">
+                                <div class="mt-3"><span class="badge badge-green rounded-pill">Beginner</span></div>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="fw-bold h5">HTML Masterclass</h3>
+                                <p class="text-secondary flex-grow-1">Learn semantic HTML, forms, tables, accessibility, and complete webpage structure.</p>
+                                <div class="d-flex gap-2">
+                                    <a href="#signup" class="btn btn-primary flex-grow-1">Enroll</a>
+                                    <input type="checkbox" class="btn-check" id="fav-html" autocomplete="off">
+                                    <label class="btn btn-outline-danger heart-toggle-btn" for="fav-html">
+                                        <i class="bi bi-heart"></i>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card-item">
+                        <div class="card h-100 rounded-4 shadow-sm border overflow-hidden">
+                            <div class="text-center py-4" style="background:#eef7ff;">
+                                <img src="Img/images-removebg-preview (1).png" alt="CSS Logo" style="height:60px;object-fit:contain;">
+                                <div class="mt-3"><span class="badge badge-blue rounded-pill">Popular</span></div>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="fw-bold h5">CSS Masterclass</h3>
+                                <p class="text-secondary flex-grow-1">Master Flexbox, CSS Grid, animations, transitions, and responsive layouts.</p>
+                                <div class="d-flex gap-2">
+                                    <a href="#signup" class="btn btn-primary flex-grow-1">Enroll</a>
+                                    <input type="checkbox" class="btn-check" id="fav-css" autocomplete="off">
+                                    <label class="btn btn-outline-danger heart-toggle-btn" for="fav-css">
+                                        <i class="bi bi-heart"></i>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card-item">
+                        <div class="card h-100 rounded-4 shadow-sm border overflow-hidden">
+                            <div class="text-center py-4" style="background:#fff9d8;">
+                                <img src="Img/javascript-logo-png_seeklogo-330541.png" alt="JavaScript Logo" style="height:60px;object-fit:contain;">
+                                <div class="mt-3"><span class="badge badge-amber rounded-pill">Bestseller</span></div>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="fw-bold h5">JavaScript Masterclass</h3>
+                                <p class="text-secondary flex-grow-1">Learn variables, functions, arrays, loops, DOM manipulation, and events.</p>
+                                <div class="d-flex gap-2">
+                                    <a href="#signup" class="btn btn-primary flex-grow-1">Enroll</a>
+                                    <input type="checkbox" class="btn-check" id="fav-js" autocomplete="off">
+                                    <label class="btn btn-outline-danger heart-toggle-btn" for="fav-js">
+                                        <i class="bi bi-heart"></i>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card-item">
+                        <div class="card h-100 rounded-4 shadow-sm border overflow-hidden">
+                            <div class="text-center py-4" style="background:#eef5ff;">
+                                <img src="Img/images-removebg-preview.png" alt="Python Logo" style="height:60px;object-fit:contain;">
+                                <div class="mt-3"><span class="badge badge-green rounded-pill">New</span></div>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="fw-bold h5">Python Masterclass</h3>
+                                <p class="text-secondary flex-grow-1">Learn Python programming, automation, data structures, problem solving, and OOP.</p>
+                                <div class="d-flex gap-2">
+                                    <a href="#signup" class="btn btn-primary flex-grow-1">Enroll</a>
+                                    <input type="checkbox" class="btn-check" id="fav-py" autocomplete="off">
+                                    <label class="btn btn-outline-danger heart-toggle-btn" for="fav-py">
+                                        <i class="bi bi-heart"></i>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="signup" class="py-5 bg-light">
+            <div class="container py-4">
+                <header class="text-center mb-5">
+                    <span class="text-primary fw-bold text-sm">Get Started</span>
+                    <h2 class="fw-bold display-6 mt-2">Join LaunchPad Academy Today</h2>
+                    <p class="text-secondary">Complete the form below to reserve your place in our upcoming courses.</p>
+                </header>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <form class="card shadow-sm border-0 rounded-4 p-4">
+                            <fieldset>
+                                <legend class="fw-bold mb-4">Student Registration</legend>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="firstName" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lastName" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="email" placeholder="example@email.com" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone" placeholder="+20 10 1234 5678" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="course" class="form-label">Select a Course</label>
+                                        <select id="course" class="form-select" required>
+                                            <option value="" selected disabled>Choose a course...</option>
+                                            <option>HTML Masterclass</option>
+                                            <option>CSS Masterclass</option>
+                                            <option>JavaScript Masterclass</option>
+                                            <option>Python Masterclass</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea id="message" class="form-control" rows="5" placeholder="Tell us why you want to join..."></textarea>
+                                    </div>
+                                    <div class="col-12 form-check mt-3 ms-2">
+                                        <input class="form-check-input" type="checkbox" id="agree" required>
+                                        <label class="form-check-label" for="agree">I agree to the terms and conditions.</label>
+                                    </div>
+                                    <div class="col-12 text-center mt-4">
+                                        <button type="submit" class="btn btn-primary btn-lg px-5">Enroll Now</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-5 my-lg-5">
+            <div class="container">
+                <header class="text-center mb-5">
+                    <span class="text-primary fw-bold text-sm">Frequently Asked Questions</span>
+                    <h2 class="fw-bold display-6 mt-2">Need Help?</h2>
+                    <p class="text-secondary">Here are some common questions about LaunchPad Academy.</p>
+                </header>
+                <div class="mx-auto" style="max-width:850px;">
+                    <details class="border rounded-4 p-4 shadow-sm mb-3">
+                        <summary class="fw-bold">Do I need any previous coding experience?</summary>
+                        <p class="mt-3 mb-0 text-secondary">No. All of our beginner courses start from the basics and gradually build your programming skills.</p>
+                    </details>
+                    <details class="border rounded-4 p-4 shadow-sm mb-3">
+                        <summary class="fw-bold">Are the courses self-paced?</summary>
+                        <p class="mt-3 mb-0 text-secondary">Yes. You can study whenever you want and review the lessons as many times as you like.</p>
+                    </details>
+                    <details class="border rounded-4 p-4 shadow-sm mb-3">
+                        <summary class="fw-bold">Will I receive a certificate?</summary>
+                        <p class="mt-3 mb-0 text-secondary">Yes. After successfully completing the course requirements, you'll receive a certificate of completion.</p>
+                    </details>
+                    <details class="border rounded-4 p-4 shadow-sm">
+                        <summary class="fw-bold">How can I contact support?</summary>
+                        <p class="mt-3 mb-0 text-secondary">You can contact our support team through email or by using the contact form available on the website.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="fw-bold">
+                        <i class="bi bi-rocket-takeoff-fill text-primary"></i> LaunchPad Academy
+                    </h3>
+                    <p class="text-light mt-3">Helping students build practical programming skills through project-based learning.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#about" class="text-white text-decoration-none">About</a></li>
+                        <li class="mb-2"><a href="#roadmap" class="text-white text-decoration-none">Roadmap</a></li>
+                        <li class="mb-2"><a href="#courses" class="text-white text-decoration-none">Courses</a></li>
+                        <li><a href="#signup" class="text-white text-decoration-none">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">Follow Us</h5>
+                    <div class="d-flex gap-3 fs-4">
+                        <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <p class="text-center mb-0 text-light">© 2026 LaunchPad Academy. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

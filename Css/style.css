@@ -1,0 +1,138 @@
+:root {
+    --brand-primary: #0052cc;
+    --brand-secondary: #00bfff;
+    --transition-speed: 0.3s;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    scroll-behavior: smooth;
+    color: #1a202c;
+    background-color: #ffffff;
+    margin: 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.text-sm { font-size: 0.875rem !important; }
+.text-xs { font-size: 0.75rem !important; }
+.fw-black { font-weight: 900 !important; }
+
+.d-flex { display: flex; }
+.align-items-center { align-items: center; }
+.justify-content-between { justify-content: space-between; }
+
+.nav-link {
+    color: #4a5568;
+    transition: color var(--transition-speed) ease;
+}
+
+.nav-link:hover { color: var(--brand-primary); }
+
+.btn {
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all var(--transition-speed) ease;
+}
+
+#hero {
+    background: linear-gradient(135deg, var(--brand-primary), #002e73);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    min-height: 500px;
+}
+
+.frosted-glass {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 1.25rem;
+    padding: 2.5rem;
+}
+
+.roadmap-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card {
+    transition: transform var(--transition-speed);
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.courses-horizontal-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+}
+
+.courses-horizontal-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+.courses-horizontal-scroll::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+.course-card-item {
+    flex: 0 0 320px;
+    scroll-snap-align: start;
+}
+
+.mobile-drawer {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    z-index: 1050;
+}
+
+#nav-toggle:checked ~ .mobile-drawer {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .mobile-drawer { display: none !important; }
+}
+
+@media (max-width: 767.98px) {
+    .responsive-heading { font-size: 2.25rem; }
+    .frosted-glass { padding: 1.75rem; }
+}
+
+.badge-amber { background-color: #fff3cd; color: #856404; border: 1px solid rgba(133,100,4,0.15); }
+.badge-green { background-color: #d1e7dd; color: #055160; border: 1px solid rgba(15,81,50,0.15); }
+.badge-blue { background-color: #cff4fc; color: #055160; border: 1px solid rgba(5,81,96,0.15); }
+
+.btn-check:checked + .heart-toggle-btn {
+    background-color: #dc3545 !important;
+    border-color: #dc3545 !important;
+    color: #ffffff !important;
+}
+
+.btn-check:checked + .heart-toggle-btn .bi-heart::before {
+    content: "\f415" !important;
+}
